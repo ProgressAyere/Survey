@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en">
+   <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="survey.css">
+<title>Survey Form</title>
+
+ </head>
+<body>
+<h1 id="title" class="text-center">Survey Form</h1>
+<p id="description" class="description text-center">This is a free Code Camp Survey form</p>
+<form id="survey-form"> 
+    <div class="form-group">
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" name="email" type="email" class="form-control" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" name="Age" min="1" max="99" pattern="\d+" placeholder="Age" class="form-control">
+</div>
+<div class="form-group">
+    <p>What can you say about freeCodeCamp</p>
+    <select id="dropdown" name="dropdown" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="It is not user friendly">It is not user friendly</option>
+    </select>
+</div>
+<div class="form-group">
+        <p>Can you refer us to your friend?</p>
+        <label>
+        <input name="referral" type="radio" value="maybe" class="input-radio" checked>Maybe
+        </label>
+        <label>
+            <input name="referral" type="radio" value="no" class="input-radio" checked>No
+        </label>
+        <label>
+            <input name="referral" type="radio" value="yes" class="input-radio" checked>Yes
+        </label>
+    </div>
+    <div class="form-group">
+        <p>What would you like to learn from us?</p>
+        <label>
+            <input type="checkbox" name="preference" value="software-engineering" class="input-checkbox">Software Engineering
+        </label>
+        <label>
+            <input type="checkbox" name="preference" value="content-creation" class="input-checkbox">Content Creation
+        </label>
+        <label>
+            <input type="checkbox" name="preference" value="blockchain-applications" class="input-checkbox">Blockchain Applications 
+        </label>
+        <label>
+            <input type="checkbox" name="preference" value="graphics-designing" class="input-checkbox">Graphics Designing
+        </label>
+</div>
+<div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comment" name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+</div>
+<div class="form-group">
+        <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+</form>
+</body>
+</html>
